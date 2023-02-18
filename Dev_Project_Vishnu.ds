@@ -1,0 +1,2373 @@
+/*
+ * Author       : demo3arabiansoftwares
+ * Generated on : 17-Feb-2023 21:10:05
+ * Version      : 1.0
+ */
+ application "Dev Project Vishnu"
+ {
+ 	date format = "dd-MMM-yyyy"
+ 	time zone = "America/Los_Angeles"
+ 	time format = "24-hr"
+ 	section Dashboard
+	{
+		icon = "ui-1-dashboard-half"
+				 page Dashboard(ID) 
+	 	 { 
+ 	 	 displayname = "Dashboard"
+
+ 	 	 icon = "ui-1-dashboard-half" 
+	 	 Content="<zml    \t\t\n\t\t\n\t\t\tbgColor='#ffffff'\n\t\t\n\t\t\n\t\t\n>\n\t<layout>\n\t<row>\n\t<column\n   \t\t width=\"25%\"\n   \t>\n\t<panel elementName=\"Panel 1\"\n \n >\n\t<pr \n\t\t\twidth='fill'\n\t\theight='fill'\n>\n\t<pc \n\t\n\t\twidth = '100%'\n>\n\t<pr \n\t\t\twidth='fill'\n\t\theight='fill'\n>\n\t<pc \n\t\tpadding = '20px'\n\tbgColor = '#FFFFFF'\n\n\t\twidth = '100%'\n\t\thAlign = 'center'\n\t\tvAlign = 'middle'\n>\n\t<pr \n\t\t\twidth='auto'\n\t\theight='auto'\n>\n\t<pc \n\t\n>\n\t<text \n\n\tcolor = '#4C7DE8'\n\tsize = '36px'\n\tbold = 'true' \n\ttype = 'Form Data'\n\tbgColor = 'rgba(0, 0, 0, 0)'\n\n\tdisplayType = 'actual'\n\tthousandsSeperator = 'LOCALE'\n\tdecimalSeperator = 'DOT'\n\tnumberScale = 'none'\n\n\n\t  \n\t  value = 'thisapp.Employee_Details.ID.count'\n>\n<\/text>\n\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr><pr \n\t\t\twidth='fill'\n\t\theight='50px'\n>\n\t<pc \n\t\tbgColor = '#286BDC'\n\n\t\twidth = '100%'\n\t\thAlign = 'center'\n\t\tvAlign = 'middle'\n>\n\t<pr \n\t\t\twidth='auto'\n\t\theight='auto'\n>\n\t<pc \n\t\n>\n\t<text \n\n\tmarginLeft = '20px'\n\tmarginRight = '20px' \n\tcolor = '#FFFFFF'\n\tsize = '16px'\n\ttype = 'Text'\n\n\n\n\t  \n\t  value = 'No of Employees'\n>\n<\/text>\n\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr>\n<\/panel>\n<\/column><column\n   \t\t width=\"25%\"\n   \t>\n\t<panel elementName=\"Panel\"\n \n\t\n\ttitle = 'Dashboard'\n\t\n\t\ttitleSize = '20px'\n >\n\t<pr \n\t\t\twidth='fill'\n\t\theight='fill'\n>\n\t<pc \n\t\n\t\twidth = '100%'\n>\n\t<pr \n\t\t\twidth='fill'\n\t\theight='fill'\n>\n\t<pc \n\t\tpadding = '20px'\n\tbgColor = '#FFFFFF'\n\n\t\twidth = '100%'\n\t\thAlign = 'center'\n\t\tvAlign = 'middle'\n>\n\t<pr \n\t\t\twidth='auto'\n\t\theight='auto'\n>\n\t<pc \n\t\n>\n\t<pr \n\t>\n\t<pc \n\t\n>\n\t<text \n\n\tmarginTop = '5px'\n\tcolor = '#FF4C2F'\n\tsize = '33px'\n\tbold = 'true' \n\ttype = 'Form Data'\n\tbgColor = 'rgba(0, 0, 0, 0)'\n\n\tdisplayType = 'actual'\n\tthousandsSeperator = 'LOCALE'\n\tdecimalSeperator = 'DOT'\n\tnumberScale = 'none'\n\n\n\t  \n\t  value = 'thisapp.Team.ID.count'\n>\n<\/text>\n\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr><pr \n\t\t\twidth='fill'\n\t\theight='50px'\n>\n\t<pc \n\t\tbgColor = '#FF4C2F'\n\n\t\twidth = '100%'\n\t\thAlign = 'center'\n\t\tvAlign = 'middle'\n>\n\t<pr \n\t\t\twidth='auto'\n\t\theight='auto'\n>\n\t<pc \n\t\n>\n\t<text \n\n\tmarginLeft = '20px'\n\tmarginRight = '20px' \n\tcolor = '#FFFFFF'\n\tsize = '16px'\n\ttype = 'Text'\n\n\n\n\t  \n\t  value = 'No of Teams'\n>\n<\/text>\n\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr>\n<\/panel>\n<\/column><column\n   \t\t width=\"25%\"\n   \t>\n\t<panel elementName=\"Panel 2\"\n \n >\n\t<pr \n\t\t\twidth='fill'\n\t\theight='fill'\n>\n\t<pc \n\t\n\t\twidth = '100%'\n>\n\t<pr \n\t\t\twidth='fill'\n\t\theight='fill'\n>\n\t<pc \n\t\tpadding = '20px'\n\tbgColor = '#FFFFFF'\n\n\t\twidth = '100%'\n\t\thAlign = 'center'\n\t\tvAlign = 'middle'\n>\n\t<pr \n\t\t\twidth='auto'\n\t\theight='auto'\n>\n\t<pc \n\t\n>\n\t<pr \n\t>\n\t<pc \n\t\n>\n\t<text \n\n\tmarginTop = '5px'\n\tcolor = '#0ABB51'\n\tsize = '33px'\n\tbold = 'true' \n\ttype = 'Form Data'\n\tbgColor = 'rgba(0, 0, 0, 0)'\n\n\tdisplayType = 'actual'\n\tthousandsSeperator = 'LOCALE'\n\tdecimalSeperator = 'DOT'\n\tnumberScale = 'none'\n\n\n\t  \n\t  value = 'thisapp.Project.ID.count'\n>\n<\/text>\n\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr><pr \n\t\t\twidth='fill'\n\t\theight='50px'\n>\n\t<pc \n\t\tbgColor = '#0ABB51'\n\n\t\twidth = '100%'\n\t\thAlign = 'center'\n\t\tvAlign = 'middle'\n>\n\t<pr \n\t\t\twidth='auto'\n\t\theight='auto'\n>\n\t<pc \n\t\n>\n\t<text \n\n\tmarginLeft = '20px'\n\tmarginRight = '20px' \n\tcolor = '#FFFFFF'\n\tsize = '16px'\n\ttype = 'Text'\n\n\n\n\t  \n\t  value = 'No of Projects'\n>\n<\/text>\n\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr>\n<\/panel>\n<\/column><column\n   \t\t width=\"25%\"\n   \t>\n\t<panel elementName=\"Panel 3\"\n \n >\n\t<pr \n\t\t\twidth='fill'\n\t\theight='fill'\n>\n\t<pc \n\t\n\t\twidth = '100%'\n>\n\t<pr \n\t\t\twidth='fill'\n\t\theight='fill'\n>\n\t<pc \n\t\tpadding = '20px'\n\tbgColor = '#FFFFFF'\n\n\t\twidth = '100%'\n\t\thAlign = 'center'\n\t\tvAlign = 'middle'\n>\n\t<pr \n\t\t\twidth='auto'\n\t\theight='auto'\n>\n\t<pc \n\t\n>\n\t<pr \n\t>\n\t<pc \n\t\n>\n\t<text \n\n\tmarginTop = '5px'\n\tcolor = '#3F3F3F'\n\tsize = '33px'\n\tbold = 'true' \n\ttype = 'Text'\n\n\n\n\t  \n\t  value = '20'\n>\n<\/text>\n\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr><pr \n\t\t\twidth='fill'\n\t\theight='50px'\n>\n\t<pc \n\t\tbgColor = '#3F3F3F'\n\n\t\twidth = '100%'\n\t\thAlign = 'center'\n\t\tvAlign = 'middle'\n>\n\t<pr \n\t\t\twidth='auto'\n\t\theight='auto'\n>\n\t<pc \n\t\n>\n\t<text \n\n\tmarginLeft = '20px'\n\tmarginRight = '20px' \n\tcolor = '#FFFFFF'\n\tsize = '16px'\n\ttype = 'Text'\n\n\n\n\t  \n\t  value = 'Blaze'\n>\n<\/text>\n\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr>\n<\/panel>\n<\/column>\n<\/row><row>\n\t<column\n   \t\t width=\"100%\"\n   \t>\n\t<dsp id='html_snippet' elementName=\"HTML Snippet\"\n bgColor=\"#FFFFFF\" \n>\n\t<![CDATA[htmlpage html_snippet(ID)\ncontent\n&lt;%{\n\t%&gt;\n&lt;html&gt;\n        &lt;head&gt;\n            &lt;style&gt;\n\n                .tableFixedHead{\n                    overflow-y: auto;\n                    height: 300px;   \n                }\n\n                .tablehFixedHead thead th{\n                    position: sticky;\n                    top: 0;\n                }\n\n                table{\n                    border-collapes: collapse; \n                    width :100%;\n                }\n\n                th, td{\n                    padding: 8px 16px;\n                    border: 1px solid #ccc;                   \n                }\n\n                th{\n                    background: #eee;\n                }\n\t\t\t\ttd:hover {\n                    background-color: black;\n\t\t\t\t\tcolor: red;\n                }\n            &lt;\/style&gt;\n        &lt;\/head&gt;\n        &lt;body&gt;\n\n            &lt;div class = &quot;tableFixedHead&quot;&gt;\n                &lt;table&gt;\n&lt;%\n\tfetchProjects = Project[ID != 0];\n\ttable1 = &quot;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Project Name&lt;\/th&gt;&lt;th&gt;Team&lt;\/th&gt;&lt;th&gt;Total Effort&lt;\/th&gt;&lt;th&gt;Testing Hours&lt;\/th&gt;&lt;th&gt;Total Billable Hours&lt;\/th&gt;&lt;\/tr&gt;&quot;;\n\tfor each  project in fetchProjects\n\t{\n\t\ttable1 = table1 + &quot;&lt;tr&gt;&lt;td&gt;&quot; + project.Project_Name + &quot;&lt;\/td&gt;&lt;td&gt;&quot; + project.Team.Team_Name + &quot;&lt;\/td&gt;&lt;td&gt;&quot; + project.Total_Effort + &quot;&lt;\/td&gt;&lt;td&gt;&quot; + project.Testing + &quot;&lt;\/td&gt;&lt;td&gt;&quot; + project.Total_Billable_Hours + &quot;&lt;\/td&gt;&lt;\/tr&gt;&quot;;\n\t}\n\ttable2 = table1 + &quot;&lt;\/table&gt;&quot;;\n\t%&gt;\n&lt;%=table2%&gt;\n            &lt;\/div&gt;\n      &lt;\/body&gt;\n  \n    &lt;\/html&gt;\n&lt;%\n\n}%&gt;]]>\n<\/dsp>\n<\/column>\n<\/row>\n<\/layout>\n<\/zml>" 
+ 	 	}
+				 page EmployeePage 
+	 	 { 
+ 	 	 displayname = "EmployeePage"
+
+ 	 	 icon = "" 
+	 	 Content="<zml    \t\t\n\t\t\n\t\t\n\t\t\n\t\t\n>\n\t<layout>\n\t<row>\n\t<column\n   \t\t width=\"100%\"\n   \t>\n\t<dsp id='html_snippet' elementName=\"HTML Snippet\"\n bgColor=\"#FFFFFF\" \n>\n\t<![CDATA[htmlpage html_snippet()\ncontent\n&lt;%{\n\t%&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;style&gt;\n.tableFixedHead\n{\n\tOverflow-y:scroll;\n\thight:300px;\n}\n.tableFixedHead thead th\n{\n\tposition:sticky;\n\ttop:0;\n}\ntable\n{\n\t border: groove;\n\tborder-collapes:collapes;\n\twidth: 100%;\n}\n\/*th,*\/\ntd{\n\tpadding: 8px 16px;\n\t\/\/border-spacing: 30px;\n\tborder:1px solid#ccc;\n\ttext-align: center;\n}\nth\n{\n\tpadding: 8px 16px;\n\t\/\/border-spacing: 30px;\n\tborder:1px solid#ccc;\n\ttext-align: center;\n\tbackground-color:#D6EEEE;\t\n}\n\/\/ th:nth-child(even),td:nth-child(even) {\n\/\/   background-color: #D6EEEE;\n\/\/   text-align: center;\n\/\/ }\n\n&lt;\/style&gt;\n&lt;\/head&gt;\n&lt;div class=&quot;tableFixedHead&quot;&gt;\n&lt;table&gt;\n&lt;%\n\tempDetails = FormforhtmlPage_Sus[ID != 0] sort by Emp_ID asc;\n\ttab1 = &quot;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Employee ID&lt;\/th&gt;&lt;th&gt;Employee Name&lt;\/th&gt;&lt;th&gt;Phone&lt;\/th&gt;&lt;th&gt;Email&lt;\/th&gt;&lt;th&gt;Photo of Employee&lt;\/th&gt;&lt;\/tr&gt;&quot;;\n\tfor each  rec in empDetails\n\t{\n\t\tuserImage = FormforhtmlPage_Sus[ID = rec.ID];\n\t\tuImage = userImage.Image;\n\t\tif(uImage.contains(&quot;sharedBy&quot;))\n\t\t{\n\t\t\tsrc = uImage.getsuffix(&quot;src&quot;);\n\t\t\tsrc = src.getprefix(&quot;border&quot;).trim();\n\t\t\tsrc = src.getsuffix(&quot;\\&quot;&quot;).trim();\n\t\t\tsrc = src.getprefix(&quot;\\&quot;&quot;).trim();\n\t\t\tif(src.contains(&quot;sharedBy&quot;))\n\t\t\t{\n\t\t\t\timageNmae = src.getsuffix(&quot;image\/&quot;).trim();\n\t\t\t\tsrc = &quot;http:\\\\creator.zoho.com&quot; + zoho.appuri + &quot;FormforhtmlPage_Report\/&quot; + userImage.ID + &quot;\/Image\/image-download\/&quot; + imageNmae;\n\t\t\t\tusrImg = &quot;&lt;img style=&apos;height:60px;width:60px;&apos;src=&apos;&quot; + src + &quot;&apos;\/&gt;&quot;;\n\t\t\t}\n\t\t}\n\t\ttab1 = (tab1 + &quot;&lt;tr&gt;&lt;td&gt;&quot; + rec.Emp_ID + &quot;&lt;\/td&gt;&lt;td&gt;&quot; + rec.Name) + &quot;&lt;\/td&gt;&lt;td&gt;&quot; + rec.Phone_Number + &quot;&lt;\/td&gt;&lt;td&gt;&quot; + rec.Email + &quot;&lt;\/td&gt;&lt;td&gt;&quot; + usrImg + &quot;&lt;\/td&gt;&lt;\/tr&gt;&quot;;\n\t}\n\ttab2 = tab1 + &quot;&lt;\/table&gt;&quot;;\n\t%&gt;\n&lt;%=tab2%&gt;\n&lt;\/html&gt;\n&lt;%\n\n}%&gt;]]>\n<\/dsp>\n<\/column>\n<\/row>\n<\/layout>\n<\/zml>" 
+ 	 	}
+				 page Test_Areej 
+	 	 { 
+ 	 	 displayname = "Test Areej"
+
+ 	 	 icon = "education-flask" 
+	 	 Content="<zml    \t\t\n\t\t\n\t\t\n\t\t\n\t\t\n>\n\t<layout>\n\t<row>\n\t<column\n   \t\t width=\"100%\"\n   \t>\n\t<widgets elementName='Widget' importedTemplate='true'\/>\n<\/column>\n<\/row>\n<\/layout>\n<\/zml>" 
+ 	 	}
+	}
+	section Projects
+	{
+		icon = "education-books-46"
+		form Project
+		{
+			success message = "Project Added Successfully"
+			field alignment = left
+			Basic_Information
+			(
+				type = section
+				displayname = "Basic Information"
+				visibility = true
+	 			row = 1
+	 			column = 0   
+				width = medium
+			)
+			Project_Name
+			(
+    			type = text
+				displayname = "Project Name"
+	 			row = 1
+	 			column = 1   
+				width = large
+			)
+			Dropdown
+			(
+				type = picklist
+				displayname = "Drop Down"
+				maxchar = 100
+				values = {"Mail DropDown 1","Mail DropDown 2","Mail DropDown 3"}
+	 			row = 1
+	 			column = 1   
+				width = medium
+			)
+			Activate
+			(
+    			type = checkbox
+				initial value = false
+	 			row = 1
+	 			column = 1   
+				width = medium
+			)
+			Team
+			(
+				type = picklist	
+				values  = Team.ID
+    			displayformat = [Team_Name]
+				sortorder = ascending
+	 			row = 1
+	 			column = 2   
+				width = large
+			)
+			Scope_Details
+			(
+				type = grid
+				displayname = "Scope Details"
+				Products
+				(
+					type = picklist	
+					values  = Products.ID
+    				displayformat = [Product_Name]
+					sortorder = ascending
+					width = small
+				)
+				Module_Name
+				(
+    				type = text
+					displayname = "Module Name"
+					width = small
+				)
+				User
+				(
+					type = picklist
+					maxchar = 100
+					values = {"User","System"}
+					width = small
+				)
+				Task
+				(
+					type = list	
+					values = {"Sub Form Opt 1","Sub Form Opt 2","Sub Form Opt 3"}
+					height = 60px
+					width = small
+				)
+				Features_field
+				(
+    				type = text
+					displayname = "Features"
+					width = small
+				)
+				Effort
+				(
+					type = decimal
+					width = small
+				)
+				Testingappend
+				(
+					type = picklist
+					maxchar = 100
+					values = {"One"}
+					width = medium
+				)
+	 			row = 2
+	 			column = 1   
+				width = medium
+			)
+			Section1
+			(
+				type = section
+				displayname = "Advanced Informations"
+				visibility = true
+	 			row = 3
+	 			column = 0   
+				width = medium
+			)
+			Total_Effort
+			(
+				type = decimal
+				displayname = "Total Effort"
+	 			row = 3
+	 			column = 1   
+				width = medium
+			)
+			Testing
+			(
+				type = decimal
+	 			row = 3
+	 			column = 1   
+				width = medium
+			)
+			Total_Billable_Hours
+			(
+				type = decimal
+				displayname = "Total Billable Hours"
+	 			row = 3
+	 			column = 1   
+				width = medium
+			)
+			Point_of_Contact_Information
+			(
+				type = grid
+				displayname = "Point of Contact Information"
+				values  = Point_of_Contacts.ID
+	 			row = 4
+	 			column = 1   
+				width = medium
+			)
+			Employee_Details_Employee
+			(
+				type = picklist	
+				displayname = "Employee Details - Employee"
+				values  = Employee_Details.ID
+    			displayformat = [Employee]
+				advanced field search = true
+				sortorder = ascending
+	 			row = 1
+	 			column = 1   
+				width = medium
+			)
+	
+			customize
+			(
+				icon = "education-books-46"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		default list All_Projects
+		{
+			displayName = "All Projects"
+			show all rows from Project    
+			(
+				Project_Name as "Project Name"
+				Scope_Details.Module_Name as "Scope Details"
+				Team
+				Total_Effort as "Total Effort"
+				Testing
+				Total_Billable_Hours as "Total Billable Hours"
+				Dropdown as "Drop Down"
+				Activate
+				Employee_Details_Employee as "Employee Details - Employee"
+			)
+			options
+			(
+				icon = "travel-world"
+	 		)
+			quickview
+			(
+				layout
+				(
+		 			type = -1
+					datablock1
+					(
+			 			layout type = -1
+						fields
+						(
+							Project_Name as "Project Name"
+							Team
+							Total_Effort as "Total Effort"
+							Testing
+							Total_Billable_Hours as "Total Billable Hours"
+							Dropdown as "Drop Down"
+							Employee_Details_Employee as "Employee Details - Employee"
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+							record
+							(
+								Edit   	   
+								Duplicate   	   
+								Delete   	   
+    						)
+    			)
+    			action
+    			(
+							on click
+							(
+								View Record   	   
+    						)
+							on right click
+							(
+								Edit   	   
+								Delete   	   
+								Duplicate   	   
+								View Record   	   
+    						)
+     			)
+			)
+			detailview
+			(
+				layout
+				(
+		 			type = 1
+					datablock1
+					(
+			 			layout type = -2
+						fields
+						(
+							Project_Name as "Project Name"
+							Scope_Details.Module_Name as "Scope Details"
+							Team
+							Total_Effort as "Total Effort"
+							Testing
+							Total_Billable_Hours as "Total Billable Hours"
+							Dropdown as "Drop Down"
+							Activate
+							Employee_Details_Employee as "Employee Details - Employee"
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+    			)
+			)
+		}
+	}
+	section Teams
+	{
+		icon = "users-multiple-11"
+		form Team
+		{
+			success message = "Team Added Successfully"
+			field alignment = left
+			Section
+			(
+				type = section
+	 			row = 1
+	 			column = 0   
+				width = medium
+			)
+			Team_Name
+			(
+    			type = text
+				displayname = "Team Name"
+	 			row = 1
+	 			column = 1   
+				width = small
+			)
+			Team_Members
+			(
+				type = grid
+				displayname = "Team Members"
+				values  = Employee_Details.ID
+	 			row = 2
+	 			column = 1   
+				width = medium
+			)
+	
+			customize
+			(
+				icon = "users-multiple-11"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		default list All_Teams
+		{
+			displayName = "All Teams"
+			show all rows from Team    
+			(
+				Team_Name as "Team Name"
+			)
+			options
+			(
+				icon = "travel-world"
+	 		)
+			quickview
+			(
+				layout
+				(
+		 			type = -1
+					datablock1
+					(
+			 			layout type = -1
+						fields
+						(
+							Team_Name as "Team Name"
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+							record
+							(
+								Edit   	   
+								Duplicate   	   
+								Delete   	   
+    						)
+    			)
+    			action
+    			(
+							on click
+							(
+								View Record   	   
+    						)
+							on right click
+							(
+								Edit   	   
+								Delete   	   
+								Duplicate   	   
+								View Record   	   
+    						)
+     			)
+			)
+			detailview
+			(
+				layout
+				(
+		 			type = 1
+					datablock1
+					(
+			 			layout type = -2
+						fields
+						(
+							Team_Name as "Team Name"
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+    			)
+			)
+		}
+	}
+	section Products
+	{
+		icon = "shopping-gift"
+		form Products
+		{
+			success message = "Product Added Successfully"
+			field alignment = left
+			Section
+			(
+				type = section
+	 			row = 1
+	 			column = 0   
+				width = medium
+			)
+			Product_Name
+			(
+    			type = text
+				displayname = "Product Name"
+	 			row = 1
+	 			column = 1   
+				width = medium
+			)
+	
+			customize
+			(
+				icon = "shopping-gift"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		default list All_Products
+		{
+			displayName = "All Products"
+			show all rows from Products    
+			(
+				Product_Name as "Product Name"
+			)
+			options
+			(
+				icon = "travel-world"
+	 		)
+			quickview
+			(
+				layout
+				(
+		 			type = -1
+					datablock1
+					(
+			 			layout type = -1
+						fields
+						(
+							Product_Name as "Product Name"
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+							record
+							(
+								Edit   	   
+								Duplicate   	   
+								Delete   	   
+    						)
+    			)
+    			action
+    			(
+							on click
+							(
+								View Record   	   
+    						)
+							on right click
+							(
+								Edit   	   
+								Delete   	   
+								Duplicate   	   
+								View Record   	   
+    						)
+     			)
+			)
+			detailview
+			(
+				layout
+				(
+		 			type = 1
+					datablock1
+					(
+			 			layout type = -2
+						fields
+						(
+							Product_Name as "Product Name"
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+    			)
+			)
+		}
+	}
+	section Employee_Details
+	{
+		displayname= "Employee Details"
+		icon = "users-2-contacts-44"
+		default list All_Employee_Details
+		{
+			displayName = "All Employee Details"
+			show all rows from Employee_Details    
+			(
+				Employee
+				Phone_Number as "Phone"
+				(
+					displayformat = plainnumber 
+					linktodial = enable
+				)
+				Email
+			)
+			options
+			(
+				icon = "users-2-contacts-44"
+	 		)
+			quickview
+			(
+				layout
+				(
+		 			type = -1
+					datablock1
+					(
+			 			layout type = -1
+						fields
+						(
+							Employee
+							Phone_Number as "Phone"
+							Email
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+							record
+							(
+								Edit   	   
+								Duplicate   	   
+								Delete   	   
+    						)
+    			)
+    			action
+    			(
+							on click
+							(
+								View Record   	   
+    						)
+							on right click
+							(
+								Edit   	   
+								Delete   	   
+								Duplicate   	   
+								View Record   	   
+    						)
+     			)
+			)
+			detailview
+			(
+				layout
+				(
+		 			type = 1
+					datablock1
+					(
+			 			layout type = -2
+						fields
+						(
+							Employee
+							Phone_Number as "Phone"
+							Email
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+    			)
+			)
+		}
+		form Employee_Details
+		{
+			title 
+    		{
+				displayname = "Employee Details"
+    			on add = "Employees"
+   	 			on edit = "Employees"
+			}
+			success message = "Employee Detail Added Successfully"
+			field alignment = left
+			Section
+			(
+				type = section
+	 			row = 1
+	 			column = 0   
+				width = medium
+			)
+			Employee
+			(
+    			type = picklist
+				module = users
+				displayformat = [username]
+	 			row = 1
+	 			column = 1   
+				width = medium
+				personal data = true
+			)
+			Email
+			(
+    			type = email
+				maxchar = 80
+	 			row = 1
+	 			column = 1   
+				width = medium
+				personal data = true
+			)
+			Phone_Number
+			(
+    			type = phonenumber
+				displayname = "Phone"
+	 			row = 1
+	 			column = 1   
+				width = medium
+				personal data = true
+			)
+	
+			customize
+			(
+				icon = "users-2-contacts-44"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+	}
+	section Point_of_Contacts
+	{
+		displayname= "Point of Contacts"
+		icon = "users-2-b-check"
+		form Point_of_Contacts
+		{
+			displayname = "Point of Contacts"
+			success message = "Data Added Successfully!"
+			field alignment = left
+					hide = true
+			Section
+			(
+				type = section
+	 			row = 1
+	 			column = 0   
+				width = medium
+			)
+			Name
+			(
+    			type = name
+     			prefix
+     			(
+	     			 type = prefix
+	     			 displayname ="Prefix"
+	     			 visibility = false
+	     			 value = {"Mr.","Mrs.","Ms."}
+     			) 
+     			first_name
+     			(
+	     			 type = first_name
+	     			 displayname ="First Name"
+     			) 
+     			last_name
+     			(
+	     			 type = last_name
+	     			 displayname ="Last Name"
+     			) 
+     			suffix
+     			(
+	     			 type = suffix
+	     			 displayname ="Suffix"
+	     			 visibility = false
+     			) 
+	 			row = 1
+	 			column = 1   
+				width = medium
+				personal data = true
+			)
+			Phone_Number
+			(
+    			type = phonenumber
+				displayname = "Phone"
+	 			row = 1
+	 			column = 1   
+				width = medium
+				personal data = true
+			)
+			Email
+			(
+    			type = email
+				maxchar = 80
+	 			row = 1
+	 			column = 1   
+				width = medium
+				personal data = true
+			)
+	
+			customize
+			(
+				icon = "users-2-b-check"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		default list Point_of_Contacts_Report
+		{
+			displayName = "Point of Contacts Report"
+   			hide = true
+			show all rows from Point_of_Contacts    
+			(
+				Name 
+	 			(
+	      			displayformat = [first_name+""+prefix+""+last_name+""+suffix]
+	 			)
+				Phone_Number as "Phone"
+				(
+					displayformat = plainnumber 
+					linktodial = enable
+				)
+				Email
+			)
+			options
+			(
+				icon = "loader-refresh"
+	 		)
+			quickview
+			(
+				layout
+				(
+		 			type = -1
+					datablock1
+					(
+			 			layout type = -1
+						fields
+						(
+							Name
+							Phone_Number as "Phone"
+							Email
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+							record
+							(
+								Edit   	   
+								Duplicate   	   
+								Delete   	   
+    						)
+    			)
+    			action
+    			(
+							on click
+							(
+								View Record   	   
+    						)
+							on right click
+							(
+								Edit   	   
+								Delete   	   
+								Duplicate   	   
+								View Record   	   
+    						)
+     			)
+			)
+			detailview
+			(
+				layout
+				(
+		 			type = 1
+					datablock1
+					(
+			 			layout type = -2
+						fields
+						(
+							Name
+							Phone_Number as "Phone"
+							Email
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+    			)
+			)
+		}
+	}
+	section FormforhtmlPage
+	{
+		form FormforhtmlPage_Sus
+		{
+			success message = "Data Added Successfully!"
+			field alignment = left
+			Section
+			(
+				type = section
+	 			row = 1
+	 			column = 0   
+				width = medium
+			)
+			Emp_ID
+			(
+    			type = autonumber
+				displayname = "Emp.ID"
+				start index = 1
+	 			row = 1
+	 			column = 1   
+				width = medium
+			)
+			Name
+			(
+    			type = name
+     			prefix
+     			(
+	     			 type = prefix
+	     			 displayname ="Prefix"
+	     			 visibility = false
+	     			 value = {"Mr.","Mrs.","Ms."}
+     			) 
+     			first_name
+     			(
+	     			 type = first_name
+	     			 displayname ="First Name"
+     			) 
+     			last_name
+     			(
+	     			 type = last_name
+	     			 displayname ="Last Name"
+     			) 
+     			suffix
+     			(
+	     			 type = suffix
+	     			 displayname ="Suffix"
+	     			 visibility = false
+     			) 
+	 			row = 1
+	 			column = 1   
+				width = medium
+				personal data = true
+			)
+			Phone_Number
+			(
+    			type = phonenumber
+				displayname = "Phone"
+	 			row = 1
+	 			column = 1   
+				width = medium
+				personal data = true
+			)
+			Email
+			(
+    			type = email
+				maxchar = 80
+	 			row = 1
+	 			column = 1   
+				width = medium
+				personal data = true
+			)
+			Image
+			(
+    			type = image
+				source  = file
+				aspect ratio = original
+				camera = primary
+				show gallery = true
+				switch camera = true
+	 			row = 1
+	 			column = 2   
+				width = medium
+			)
+	
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		default list FormforhtmlPage_Report
+		{
+			displayName = "FormforhtmlPage Report"
+			show all rows from FormforhtmlPage_Sus    
+			(
+				Name 
+	 			(
+	      			displayformat = [first_name+""+prefix+""+last_name+""+suffix]
+	 			)
+				Emp_ID as "Emp.ID"
+				Phone_Number as "Phone"
+				(
+					displayformat = plainnumber 
+					linktodial = enable
+				)
+				Email
+				Image
+			)
+			quickview
+			(
+				layout
+				(
+		 			type = -1
+					datablock1
+					(
+			 			layout type = -1
+						fields
+						(
+							Name
+							Emp_ID as "Emp.ID"
+							Phone_Number as "Phone"
+							Email
+							Image
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+							record
+							(
+								Edit   	   
+								Duplicate   	   
+								Delete   	   
+    						)
+    			)
+    			action
+    			(
+							on click
+							(
+								View Record   	   
+    						)
+							on right click
+							(
+								Edit   	   
+								Delete   	   
+								Duplicate   	   
+								View Record   	   
+    						)
+     			)
+			)
+			detailview
+			(
+				layout
+				(
+		 			type = 1
+					datablock1
+					(
+			 			layout type = -2
+						fields
+						(
+							Name
+							Emp_ID as "Emp.ID"
+							Phone_Number as "Phone"
+							Email
+							Image
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+    			)
+			)
+		}
+	}
+	section Orders
+	{
+		form Order
+		{
+			success message = ""
+			field alignment = left
+			Section
+			(
+				type = section
+	 			row = 1
+	 			column = 0   
+				width = medium
+			)
+			Order
+			(
+    			type = text
+				displayname = "Order Name"
+	 			row = 1
+	 			column = 1   
+				width = medium
+			)
+			Customers
+			(
+				type = picklist	
+				values  = Customers.ID
+    			bidirectional = Orders
+    			displayformat = [Customer_Name]
+				searchable = true
+				sortorder = ascending
+	 			row = 1
+	 			column = 1   
+				width = medium
+			)
+	
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		default list All_Orders
+		{
+			displayName = "All Orders"
+			show all rows from Order    
+			(
+				Order as "Order Name"
+				Customers
+				Customers.Customer_Name as "Customer Name"
+			)
+			quickview
+			(
+				layout
+				(
+		 			type = -1
+					datablock1
+					(
+			 			layout type = -1
+						fields
+						(
+							Order as "Order Name"
+							Customers
+							Customers.Customer_Name as "Customer Name"
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+							record
+							(
+								Edit   	   
+								Duplicate   	   
+								Delete   	   
+    						)
+    			)
+    			action
+    			(
+							on click
+							(
+								View Record   	   
+    						)
+							on right click
+							(
+								Edit   	   
+								Delete   	   
+								Duplicate   	   
+								View Record   	   
+    						)
+     			)
+			)
+			detailview
+			(
+				layout
+				(
+		 			type = 1
+					datablock1
+					(
+			 			layout type = -2
+						fields
+						(
+							Order as "Order Name"
+							Customers
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+    			)
+			)
+		}
+	}
+	section Customers
+	{
+		form Customers
+		{
+			success message = "Customer Added Successfully"
+			field alignment = left
+			Section
+			(
+				type = section
+	 			row = 1
+	 			column = 0   
+				width = medium
+			)
+			Customer_Name
+			(
+    			type = text
+				displayname = "Customer Name"
+	 			row = 1
+	 			column = 1   
+				width = medium
+			)
+			Orders
+			(
+				type = grid
+				values  = Order.ID
+    			bidirectional = Customers
+	 			row = 2
+	 			column = 1   
+				width = medium
+			)
+	
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		print template
+			{
+				Test
+				{
+						content = {"layout":"1","pageNumberOption":null,"orientation":"null","isFooterEnabled":false,"containerStyle":"","mainLayout":[{"elements":[{"type":"columns","element":{"split":"100","id":"u_elem_62686299999952316","elemStyle":"","collayouts":[{"colElements":[{"type":"text","element":{"Fields":[{"Label_Name":"Customer_Name"}],"id":"u_elem_62685","content":"<div\n    style=\"background: rgba(0, 0, 0, 0); padding: 0px; outline: none\"><h1\n      style=\"color: rgb(0, 0, 0); font-weight: 400; font-style: normal; text-align: left\">Hello&nbsp;<span>${Customer_Name}<\/span><span style=\"color: rgb(0, 0, 0); font-family: Lato, Arimo, sans-serif; font-size: 28px; font-weight: 400; font-style: normal\">&nbsp;<\/span><\/h1><\/div>"}}]}]}}],"id":1}],"resize":"a4","themeFont":"lato","templateStyle":"text-align: left; width: 793.7px; background-image: none","isHeaderEnabled":false,"version":"2"}
+				}
+			}
+		}
+		default list All_Customers
+		{
+			displayName = "All Customers"
+			print template = Test
+			show all rows from Customers    
+			(
+				Customer_Name as "Customer Name"
+				custom action "Download"
+				(
+	  			workflow = DownloadPDF
+				show action in edit record menu = true
+				column header = "Download"
+				)
+			)
+			quickview
+			(
+				layout
+				(
+		 			type = -1
+					datablock1
+					(
+			 			layout type = -1
+						fields
+						(
+							Customer_Name as "Customer Name"
+				"Download"
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+							record
+							(
+								Edit   	   
+								Duplicate   	   
+								Delete   	   
+								"Download"
+    						)
+    			)
+    			action
+    			(
+							on click
+							(
+								View Record   	   
+    						)
+							on right click
+							(
+								Edit   	   
+								Delete   	   
+								Duplicate   	   
+								View Record   	   
+    						)
+     			)
+			)
+			detailview
+			(
+				layout
+				(
+		 			type = 1
+					datablock1
+					(
+			 			layout type = -2
+						fields
+						(
+							Customer_Name as "Customer Name"
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+    			)
+			)
+		}
+	}
+	section Rooms
+	{
+		icon = "furniture-table"
+		form Rooms
+		{
+			success message = "Room Added Successfully"
+			field alignment = left
+			Section
+			(
+				type = section
+	 			row = 1
+	 			column = 0   
+				width = medium
+			)
+			ID1
+			(
+    			type = text
+				displayname = "ID"
+	 			row = 1
+	 			column = 1   
+				width = medium
+			)
+			Status
+			(
+				type = picklist
+				maxchar = 100
+				values = {"Occupied","Not Occupied"}
+	 			row = 1
+	 			column = 1   
+				width = medium
+			)
+	
+			customize
+			(
+				icon = "furniture-table"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		default list All_Rooms
+		{
+			displayName = "All Rooms"
+			show all rows from Rooms    
+			(
+				ID1 as "ID"
+				Status
+			)
+			options
+			(
+				icon = "travel-world"
+	 		)
+			quickview
+			(
+				layout
+				(
+		 			type = -1
+					datablock1
+					(
+			 			layout type = -1
+						fields
+						(
+							ID1 as "ID"
+							Status
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+							record
+							(
+								Edit   	   
+								Duplicate   	   
+								Delete   	   
+    						)
+    			)
+    			action
+    			(
+							on click
+							(
+								View Record   	   
+    						)
+							on right click
+							(
+								Edit   	   
+								Delete   	   
+								Duplicate   	   
+								View Record   	   
+    						)
+     			)
+			)
+			detailview
+			(
+				layout
+				(
+		 			type = 1
+					datablock1
+					(
+			 			layout type = -2
+						fields
+						(
+							ID1 as "ID"
+							Status
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+    			)
+			)
+		}
+	}
+	section Profiles
+	{
+		icon = "users-2-man"
+		form Profile
+		{
+			success message = "Profile Added Successfully"
+			field alignment = left
+			Section
+			(
+				type = section
+	 			row = 1
+	 			column = 0   
+				width = medium
+			)
+			Username
+			(
+    			type = text
+	 			row = 1
+	 			column = 1   
+				width = medium
+			)
+			Password
+			(
+    			type = text
+	 			row = 1
+	 			column = 1   
+				width = medium
+			)
+	
+			customize
+			(
+				icon = "users-2-man"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		default list All_Profiles
+		{
+			displayName = "All Profiles"
+			show all rows from Profile    
+			(
+				Username
+				Password
+			)
+			options
+			(
+				icon = "travel-world"
+	 		)
+			quickview
+			(
+				layout
+				(
+		 			type = -1
+					datablock1
+					(
+			 			layout type = -1
+						fields
+						(
+							Username
+							Password
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+							record
+							(
+								Edit   	   
+								Duplicate   	   
+								Delete   	   
+    						)
+    			)
+    			action
+    			(
+							on click
+							(
+								View Record   	   
+    						)
+							on right click
+							(
+								Edit   	   
+								Delete   	   
+								Duplicate   	   
+								View Record   	   
+    						)
+     			)
+			)
+			detailview
+			(
+				layout
+				(
+		 			type = 1
+					datablock1
+					(
+			 			layout type = -2
+						fields
+						(
+							Username
+							Password
+						)
+					)
+				)
+
+				menu
+    			(
+    	 			header
+    	 			(
+    		 			Edit 
+    		 			Duplicate 
+    		 			Delete 
+    	 			)
+    			)
+			)
+		}
+	}
+		 functions
+		 {
+			 Deluge
+			 {
+				 void convertToCurrency(Float number)
+         {
+         	//    numberString = number.toString();
+         	//    info numberString;
+         	//    result = numberString.replaceAll("(?)",",",false).removeFirstOccurence(",").removeLastOccurence(",").toList();
+         	//    info result;
+         	result = number.round(2).remove("-").toString().replaceAll("(?<!\.\d)(?<=\d)(?=(?:\d\d\d)+\b)",",");
+         	info result;
+         }
+				 float hourMinuteCalculations(string a)
+         {
+         	//a = 50.1200;
+         	a = a.toDecimal();
+         	//info a;
+         	decimalPlaces = a.frac().toString().getSuffix(".").len();
+         	//info decimalPlaces;
+         	divident = (1 + leftpad("",decimalPlaces).replaceall(" ","0")).toLong();
+         	//info divident;
+         	b = a.floor();
+         	// 	info b;
+         	c = a.frac();
+         	//info c;
+         	d = c * divident / 60;
+         	//	info d;
+         	e = d.floor();
+         	// 	info e;
+         	f = d.frac();
+         	// 	info f;
+         	g = (f * 60 / 100).round(2);
+         	// 	info g;
+         	b = b + e;
+         	// 	info b;
+         	b = b + g;
+         	// 	info b;
+         	return b;
+         }
+				 void testFun(int recId)
+         {
+         	mp1 = Map();
+         	mp1.put("date","10/09/2023");
+         	mp1.put("count","12");
+         	//info mp1;
+         	mp2 = Map();
+         	mp2.put("leaveid",mp1);
+         	//info mp2;
+         	mp3 = Map();
+         	mp3.put("emprecordid",mp2);
+         	info mp3;
+         }
+				 void testFun001(int recId)
+         {
+         	user_img = FormforhtmlPage_Sus[ID == recId].Image;
+         	info user_img;
+         	// <img src = "https://creatorexport.zoho.com/sharedBy/appLinkName/viewLinkName/fieldName/image/1675061317691_Screenshot__493_.png" lowqual = "https://creatorexport.zoho.com/sharedBy/appLinkName/viewLinkName/fieldName/image/1675061317691_710" medqual = "https://creatorexport.zoho.com/sharedBy/appLinkName/viewLinkName/fieldName/image/1675061317691_710" downqual = "https://creatorexport.zoho.com/sharedBy/appLinkName/viewLinkName/fieldName/image/1675061317691_Screenshot__493_.png" border = "0"></img> 
+         }
+				 void testingForLoop(int count)
+         {
+         	// 	count = 5;
+         	iterationString = "".leftPad(count);
+         	info "iterationString = " + iterationString;
+         	// 	stringLength = iterationString.length();
+         	// 	info "stringLength = " + stringLength;
+         	iterationString = iterationString.replaceAll(" ",",");
+         	info "iterationString = " + iterationString;
+         	iterationString = iterationString.subString(0,iterationString.length() - 1);
+         	info "iterationString = " + iterationString;
+         	listPads = iterationString.toList();
+         	info "listPads = " + listPads;
+         	i = 0;
+         	for each  el in listPads
+         	{
+         		info i;
+         		i = i + 1;
+         	}
+         }
+				 void testSusmitha(int recId)
+         {
+         }
+				 void testZoomAPI()
+         {
+         	// accessTokenData = invokeUrl
+         	// [
+         	// 	url: "https://zoom.us/oauth/authorize?response_type=code&client_id=uEu1YiJAQ02zbBh6BkZ9Pg&redirect_uri=https://zoom.us"
+         	// 	type: POST
+         	// // 	parameters: <expression>
+         	// // 	headers: <expression>
+         	// // 	connection: <connection>
+         	// ];
+         	param = Map();
+         	param.put("response_type","code");
+         	param.put("client_id","uEu1YiJAQ02zbBh6BkZ9Pg");
+         	param.put("redirect_uri","https://zoom.us");
+         	accessTokenData = postUrl("https://zoom.us/oauth/authorize",param);
+         	info accessTokenData;
+         }
+			 }
+		 }
+
+
+
+
+		workflow
+		{
+		form
+		{
+			Send_Email_Form_Propertie as "Send Email - Form Properties"
+			{
+				type =  presuccess
+				form = Employee_Details
+				on start
+				{
+					actions 
+					{
+						sendmail
+						(
+							from : "zoho.adminuserid"
+							to : "zoho.adminuserid"
+							subject : "Dev Project : New entry added"
+							message : "Hello,<br/><br/>A new entry added in 'Employee Details' form of 'Dev Project' application.<br/>"
+							attachments : template : _default as inline
+						)
+					}
+				}
+			}
+			UpdateTotalEffort as "UpdateTotalEffort"
+			{
+				type =  form
+				form = Project
+				record event = on add or edit
+
+				on user input of Scope_Details.Effort
+				{
+					actions 
+					{
+						custom deluge script
+						(
+											tot_hour = 0;
+										for each  entry in input.Scope_Details
+										{
+											// 	info "Before = " + entry.Effort;
+											tot_hour = tot_hour + entry.Effort;
+											// 	info "Total Hour till now = " + tot_hour;
+											input.Total_Effort = tot_hour;
+											// 	info "After = " + tot_hour;
+										}
+						)
+					}
+				}
+
+			}
+			UpdateTotalBillable as "UpdateTotalBillable"
+			{
+				type =  form
+				form = Project
+				record event = on add or edit
+
+				on user input of Testing
+				{
+					actions 
+					{
+						custom deluge script
+						(
+											input.Total_Billable_Hours = input.Testing + input.Total_Effort;
+						)
+					}
+				}
+
+			}
+			DisableTotalEffort as "DisableTotalEffort"
+			{
+				type =  form
+				form = Project
+				record event = on add or edit
+
+				on load
+				{
+					actions 
+					{
+						custom deluge script
+						(
+											disable Total_Effort;
+										disable Total_Billable_Hours;
+						)
+					}
+				}
+
+			}
+			testingOptionAppend as "testingOptionAppend"
+			{
+				type =  form
+				form = Project
+				record event = on add or edit
+
+				on user input of Dropdown
+				{
+					actions 
+					{
+						custom deluge script
+						(
+											// dropDown = input.Dropdown;
+										// input.Project_Name = dropDown;
+										// li = List();
+										// li.add("System");
+										// li.add("User");
+										// //info li;
+										// for each  ind in li
+										// {
+										// 	col = Collection();
+										// 	newrow = Project.Scope_Details();
+										// 	newrow.User=ind;
+										// 	col.insert(newrow);
+										// 	input.Scope_Details.insert(col);
+										// }
+										// for each  rec in input.Scope_Details
+										// {
+										// 	if(rec.User == "System")
+										// 	{
+										// 		rec.Testingappend:ui.add("System");
+										// 		info "System";
+										// 		rec.Testingappend=rec.User;
+										// 	}
+										// 	else if(rec.User == "User")
+										// 	{
+										// 		rec.Testingappend:ui.add("User");
+										// 		info "User";
+										// 		rec.Testingappend=rec.User;
+										// 	}
+										// }
+										dropDown = input.Dropdown;
+										input.Project_Name = dropDown;
+										li = List();
+										li.add("System");
+										li.add("User");
+										for each  ind in li
+										{
+											col = Collection();
+											newrow = Project.Scope_Details();
+											newrow.User=ind;
+											col.insert(newrow);
+											input.Scope_Details.insert(col);
+										}
+										input.Activate = true;
+										// for each  rec in input.Scope_Details
+										// {
+										// 	//info rec;
+										// 	if(rec.User == "System")
+										// 	{
+										// 		info rec.User;
+										//         // rec.Testingappend:ui.add("System");
+										// 	}
+										// 	else if(rec.User == "User")
+										// 	{
+										//     // rec.Testingappend:ui.add("System");
+										// 	}
+										// }
+						)
+					}
+				}
+
+			}
+			appendOptions as "appendOptions"
+			{
+				type =  form
+				form = Project
+				record event = on add or edit
+					status = inactive
+
+				on add row of Scope_Details
+				{
+					actions 
+					{
+						custom deluge script
+						(
+											for each  rec in input.Scope_Details
+										{
+											if(rec.User == "System")
+											{
+												rec.Testingappend:ui.add("System");
+												info "System";
+												rec.Testingappend=rec.User;
+											}
+											else if(rec.User == "User")
+											{
+												rec.Testingappend:ui.add("User");
+												info "User";
+												rec.Testingappend=rec.User;
+											}
+										}
+										// for each  entry in input.Scope_Details
+										// {
+										// 	// 	info "Before = " + entry.Effort;
+										// 	tot_hour = tot_hour + entry.Effort;
+										// 	// 	info "Total Hour till now = " + tot_hour;
+										// 	input.Total_Effort = tot_hour;
+										// 	// 	info "After = " + tot_hour;
+										// }
+						)
+					}
+				}
+
+			}
+			appendOptionsBasedOnUser1 as "appendOptionsBasedOnUser"
+			{
+				type =  form
+				form = Project
+				record event = on add or edit
+					status = inactive
+
+				on user input of Scope_Details.User
+				{
+					actions 
+					{
+						custom deluge script
+						(
+											for each  rec in input.Scope_Details
+										{
+											if(rec.User == "System")
+											{
+												rec.Testingappend:ui.add("System");
+												info "System";
+												rec.Testingappend=rec.User;
+											}
+											else if(rec.User == "User")
+											{
+												rec.Testingappend:ui.add("User");
+												info "User";
+												rec.Testingappend=rec.User;
+											}
+										}
+						)
+					}
+				}
+
+			}
+			Activate_ui_add as "Activate ui.add"
+			{
+				type =  form
+				form = Project
+				record event = on add or edit
+
+				on user input of Activate
+				{
+					actions 
+					{
+						custom deluge script
+						(
+											if(input.Activate == true)
+										{
+											for each  rec in input.Scope_Details
+											{
+												li = {"User1","User2"};
+												if(rec.User == "System")
+												{
+													//rec.Testingappend="System";
+													rec.Testingappend:ui.add(li);
+													rec.Testingappend=li.get(1);
+												}
+												else if(rec.User == "User")
+												{
+													//rec.Testingappend="User";
+													rec.Testingappend:ui.add(li);
+													rec.Testingappend=li.get(0);
+												}
+											}
+										}
+						)
+					}
+				}
+
+			}
+			Hide as "Hide"
+			{
+				type =  form
+				form = Project
+				record event = on add or edit
+
+				on load
+				{
+					actions 
+					{
+						custom deluge script
+						(
+											hide Activate;
+						)
+					}
+				}
+
+			}
+			test as "test"
+			{
+				type =  form
+				form = Project
+				record event = on add or edit
+
+				on success
+				{
+				}
+
+			}
+		}
+
+
+
+
+
+		functions
+		{
+			DownloadPDF as "DownloadPDF"
+			{
+				type =  functions
+				form = Customers
+				execution type = for each record	
+				on start
+				{
+					actions 
+					{
+					on click
+					(
+						openUrl(zoho.appuri + "record-print/All_Customers/" + input.ID,"same window");
+					)
+					}
+				}
+			}
+		}
+	}
+	share_settings
+	{
+			"Read"
+			{
+				name = "Read"
+				type = Users_Permissions
+				permissions = {Chat:true, Predefined:true, ApiAccess:true, PIIAccess:true, ePHIAccess:true}
+				description = "This profile will have read permission for all components\n"
+			}
+			"Write"
+			{
+				name = "Write"
+				type = Users_Permissions
+				permissions = {Chat:true, Predefined:true, ApiAccess:true, PIIAccess:true, ePHIAccess:true}
+				description = "This profile will have write permission for all components\n"
+			}
+			"Administrator"
+			{
+				name = "Administrator"
+				type = Users_Permissions
+				permissions = {Chat:true, Predefined:true, ApiAccess:true, PIIAccess:true, ePHIAccess:true}
+				description = "This profile will have all the permissions.\n"
+			}
+			"Customer"
+			{
+				name = "Customer"
+				type = Customer_Portal
+				permissions = {Chat:false, Predefined:true, ApiAccess:true, PIIAccess:true, ePHIAccess:true}
+				description = "This is the default profile having only add and view permission.\n"
+			}
+			"Test"
+			{
+				name = "Test"
+				type = Customer_Portal
+				permissions = {Chat:false, Predefined:false, ApiAccess:true, PIIAccess:true, ePHIAccess:true}
+				description = "Test Profile\n"
+				ModulePermissions
+				{
+					Employee_Details
+					{
+						allFieldsVisible= true 
+						ReportPermissions
+						{
+							All_Employee_Details={"View"}
+						}
+					}
+					Customers
+					{
+						allFieldsVisible= true 
+						ReportPermissions
+						{
+							All_Customers={"View"}
+						}
+					}
+				}
+			}
+			roles
+			{
+				"CEO"
+				{
+					description = "User belonging to this role can access data of all other users."
+					"Manager"
+					{
+						description = ""
+					}
+				}
+			}
+	}
+
+	customize
+	{
+		
+		layout = "tab"
+		color = "black"
+		base theme = "professional"
+		new theme = 4
+		icons = true
+		icons style = outline
+		font = "lato"
+		color options
+    	{
+        color = "1"
+    	}
+    	logo
+    	{
+        	preference = "none"
+        	placement = "left"
+    	}
+	}
+
+
+	phone
+	{
+		customize
+		{
+        	layout = slidingpane
+		 	icons style = outline
+        	font = "default"
+            style = "3"
+        	color options
+        	{
+             	color = yellow
+         	}
+         	logo
+         	{
+             	preference = "none"
+         	}
+		}
+	}
+	tablet
+	{
+		customize
+		{
+        	layout = slidingpane
+		 	icons style = outline
+        	font = "default"
+            style = "3"
+        	color options
+        	{
+             	color = yellow
+         	}
+         	logo
+         	{
+             	preference = "none"
+         	}
+		}
+	}
+	
+}
